@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #3B1C32;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #3B1C32;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f4f4f4;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #FFF9E6; /* Updated to a soft cream color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.product img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #3B1C32;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+    .logo > img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 481px) {
+    .logo > img {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        height: 130px;
+    }
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}

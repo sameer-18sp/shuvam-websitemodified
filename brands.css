@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 223, 229);
+    color: #333;
+}
+
+/* Products Section Styles */
+.product-section {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3B1C32;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;  /* Keep items in a single row */
+    justify-content: flex-start;  /* Align items to the left */
+    gap: 20px;
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    padding-bottom: 10px;  /* Optional: Add space at the bottom for scroll */
+}
+
+.product-card {
+    width: 220px;  /* Ensure product cards have a fixed width */
+    flex-shrink: 0;  /* Prevent shrinking of product cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+}
+
+.discount-price {
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+.discount-percent {
+    color: #27AE60;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown menu items */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effects for dropdown items */
+.dropdown-content a:hover {
+    background-color: lightgrey;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for the dropdown button */
+.dropdown button {
+    background-color: #3B1C32;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown button:hover {
+    background-color: #563D52;
+}
